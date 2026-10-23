@@ -1,0 +1,16 @@
+{
+  "name": "relaycase-local-demo",
+  "version": "0.16.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "test": "node --test domain.baseline.test.mjs security.test.mjs mcp-http.test.mjs assistant-host.test.mjs mcp-shared.test.mjs approval-visibility.test.mjs",
+    "test:browser": "node verify-real-browser.mjs",
+    "sdk-check": "node interop/run-local-interop.mjs",
+    "judge-dry-run": "node judge-dry-run.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.1",
+    "zod": "4.2.0"
+  }
+}

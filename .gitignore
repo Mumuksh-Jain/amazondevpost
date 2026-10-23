@@ -1,0 +1,17 @@
+node_modules/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.db
+*.db-shm
+*.db-wal
+.env
+.env.*
+*.log
+pass13_*.png
+pass16_*.png
+demo_build/
+*.tmp
+.DS_Store
+Thumbs.db
+package-lock.json.backup
