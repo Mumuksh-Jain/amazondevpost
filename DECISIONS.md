@@ -67,5 +67,12 @@ RelayCase is a bounded household handoff assistant prototype with a real Node.js
 - **Repository URL:** `https://github.com/Mumuksh-Jain/amazondevpost`
 - **Security Audit:** Re-verified that zero bearer tokens, `.env` files, `.sqlite` databases, or secrets were committed. Standard permissive MIT License included. All tests and documentation fully aligned.
 
+---
+
+## Decision 9: Visual Workflow Blueprint Documentation
+- **Decision:** Embedded a 1254x1254 architectural blueprint diagram (`RELAYCASE Workflow Blueprint.png`) into the root `README.md`.
+- **Rationale:** Clear visual communication of the 7-stage consent pipeline (`DRAFT` → `PREVIEW` → `APPROVED` → `INVITED` → `ACCEPTED` → `CLAIMED` → `CLOSED`) directly on GitHub ensures hackathon evaluators understand the protocol architecture at a glance before inspecting the codebase.
+
+
 
 

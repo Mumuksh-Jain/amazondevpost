@@ -154,4 +154,5 @@
 - **Artifacts Prepared:**
   - `DEVPOST_SUBMISSION.md`: Full text ready for copy-pasting into Devpost form (inspiration, what it does, how we built it, challenges, real SDK friction & product feedback, accomplishments, what we learned, what's next).
   - `GITHUB_RELEASE_GUIDE.md`: Step-by-step instructions for remote push, YouTube/Vimeo video upload, and Devpost submission receipt confirmation.
-  - `README.md`: Comprehensive public repository documentation with verified run instructions.
+  - `README.md`: Comprehensive public repository documentation with verified run instructions and embedded visual workflow blueprint (`RELAYCASE Workflow Blueprint.png`).
+  - `RELAYCASE Workflow Blueprint.png`: High-resolution architectural blueprint diagram committed and tracked on GitHub `main`.
