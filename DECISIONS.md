@@ -73,6 +73,13 @@ RelayCase is a bounded household handoff assistant prototype with a real Node.js
 - **Decision:** Embedded a 1254x1254 architectural blueprint diagram (`RELAYCASE Workflow Blueprint.png`) into the root `README.md`.
 - **Rationale:** Clear visual communication of the 7-stage consent pipeline (`DRAFT` → `PREVIEW` → `APPROVED` → `INVITED` → `ACCEPTED` → `CLAIMED` → `CLOSED`) directly on GitHub ensures hackathon evaluators understand the protocol architecture at a glance before inspecting the codebase.
 
+---
+
+## Decision 10: Removal of Homepage URL in Repository Metadata
+- **Decision:** Updated repository settings via GitHub REST API to clear the `homepage` website URL so it does not display in the repository's "About" section.
+- **Rationale:** The repository's "About" section should only display the project title, description, README, and license without an external website link.
+
+
 
 
 
