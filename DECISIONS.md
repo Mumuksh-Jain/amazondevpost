@@ -60,4 +60,12 @@ RelayCase is a bounded household handoff assistant prototype with a real Node.js
   6. **Epistemic Truth Banners:** Explicit visual seals reinforcing that `CLAIMED_DONE` is a human report, not independent physical proof.
 - **Verification:** All 35 regression tests, 19 judge rehearsal checks, 9 official SDK checks, and 16 real Chrome CDP browser checks pass with 0 errors.
 
+---
+
+## Decision 8: Public GitHub Repository Release
+- **Decision:** Created new public GitHub repository `amazondevpost` under user account `Mumuksh-Jain` and pushed `main` branch.
+- **Repository URL:** `https://github.com/Mumuksh-Jain/amazondevpost`
+- **Security Audit:** Re-verified that zero bearer tokens, `.env` files, `.sqlite` databases, or secrets were committed. Standard permissive MIT License included. All tests and documentation fully aligned.
+
+
 

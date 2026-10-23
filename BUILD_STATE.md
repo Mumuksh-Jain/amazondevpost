@@ -138,7 +138,7 @@
 
 ## 6. Repository Hygiene & Secret Audit
 - **Status:** **PASS**
-- **Git Repository:** Initialized on `main`, initial release commit created.
+- **Public GitHub Repository:** **[https://github.com/Mumuksh-Jain/amazondevpost](https://github.com/Mumuksh-Jain/amazondevpost)** (Live & Verified)
 - **Audit Findings:**
   - Zero `.sqlite` or `.db` databases staged or tracked.
   - Zero `.env` files or secret tokens staged.
