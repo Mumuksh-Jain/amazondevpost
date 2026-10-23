@@ -2,6 +2,8 @@
 
 > **Synthetic demonstration, not connected to a live Alexa+ account.** This is a bounded household handoff simulator with real local Node.js/SQLite state, a deterministic simulated assistant, and real HTTP MCP-shaped calls. Human approval is server-enforced through the first-party UI. This is not a deployed production service or a claim that a physical task was independently verified.
 
+![RelayCase Workflow Blueprint](RELAYCASE%20Workflow%20Blueprint.png)
+
 ## Quick Start — No external dependencies required for the default local demo
 
 - Requires Node.js **22.13+** (built-in `node:sqlite`) and a modern browser.
