@@ -18,7 +18,7 @@ The local Git repository is already initialized and cleanly committed on branch 
 6. In your terminal inside `d:\hackathons\amazon devpost\RELAYCASE_PASS16_SUBMISSION_KIT\relaycase\`, run:
 
 ```bash
-git remote add origin https://github.com/<YOUR_GITHUB_USERNAME>/relaycase.git
+git remote add origin https://github.com/Mumuksh-Jain/amazondevpost.git
 git branch -M main
 git push -u origin main
 ```

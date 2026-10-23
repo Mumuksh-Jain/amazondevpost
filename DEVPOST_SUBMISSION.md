@@ -99,6 +99,6 @@ We learned that the most important safety boundary in household AI is not the ac
 |---|---|
 | **Project Name** | RelayCase — Bounded Household Responsibility Assistant |
 | **Demo Video URL** | *Upload `RelayCase_Continuous_English_Demo.mp4` to YouTube or Vimeo and paste URL here* |
-| **GitHub Repository URL** | *Paste public GitHub repository URL created from `relaycase/`* |
+| **GitHub Repository URL** | https://github.com/Mumuksh-Jain/amazondevpost |
 | **Video Runtime** | 170.80 seconds (2 minutes 50 seconds — under 3 minutes) |
 | **Submission Deadline** | October 24, 2026, 00:30 IST |
