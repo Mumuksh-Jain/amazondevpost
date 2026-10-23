@@ -113,16 +113,21 @@ class CdpClient {
     if (!ok) throw new Error(`Could not click selector: ${selector}`);
   }
   async fill(selector, value) {
-    const ok = await this.eval(`(() => {
-      const el = document.querySelector('${selector}');
-      if (!el) return false;
-      el.focus();
-      el.value = ${JSON.stringify(value)};
-      el.dispatchEvent(new Event('input', {bubbles: true}));
-      el.dispatchEvent(new Event('change', {bubbles: true}));
-      return true;
-    })()`);
-    if (!ok) throw new Error(`Could not fill selector: ${selector}`);
+    const start = Date.now();
+    while (Date.now() - start < 5000) {
+      const ok = await this.eval(`(() => {
+        const el = document.querySelector('${selector}');
+        if (!el) return false;
+        el.focus();
+        el.value = ${JSON.stringify(value)};
+        el.dispatchEvent(new Event('input', {bubbles: true}));
+        el.dispatchEvent(new Event('change', {bubbles: true}));
+        return true;
+      })()`);
+      if (ok) return;
+      await this.wait(100);
+    }
+    throw new Error(`Could not fill selector: ${selector}`);
   }
   async screenshot() {
     const res = await this.send('Page.captureScreenshot', {format: 'png'});
@@ -332,6 +337,7 @@ try {
   console.log(`[E2E] Direct Chrome navigation to http://localhost:${serverPort}`);
   await cdp.send('Page.navigate', {url: `http://localhost:${serverPort}`});
   await cdp.waitForText('.demo-banner', 'SIMULATED ALEXA+ EXPERIENCE');
+  await cdp.waitForText('h1', 'Responsibility, clearly recorded');
   await cdp.fill('input[type="password"]', tokens.alex);
   await cdp.click('button[type="submit"]');
   await cdp.waitForText('header', 'Identity: alex');

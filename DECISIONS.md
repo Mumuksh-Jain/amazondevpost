@@ -46,3 +46,18 @@ RelayCase is a bounded household handoff assistant prototype with a real Node.js
 - **Implementation:** Generated 14 distinct spoken narration clips using Windows Speech Synthesis (`Microsoft David Desktop` at natural rate 1), rendered 1600x900 composite UI frames via headless Chrome CDP, and encoded into progressive H.264 video with AAC audio via FFmpeg.
 - **Disclosures Included:** Explicit callouts in both spoken voice and lower-third banners explaining that RelayCase is a simulated Alexa+ web experience backed by local SQLite and real HTTP MCP, and that task completion is an unverified human claim rather than physical AI proof.
 
+---
+
+## Decision 7: Anti-AI Craft Paradigm & Architectural Workbench UI/UX Redesign
+- **Decision:** Transform the frontend interface from a plain utility dashboard into a tactile, high-craft architectural accountability workbench inspired by CollabHub ("The Anti-AI Craft Paradigm") and Pip DreamOS.
+- **Rationale:** The previous UI was utilitarian and generic. Household delegation and accountability require trust, transparency, and human agency. By adopting warm drafting paper textures (`#f6f4ee`), accessible terracotta accents (`#b04c18`), deep stone typography (`#2b2318`), and an architectural 7-stage workflow stepper, the interface communicates technical sophistication and human sovereignty.
+- **Key Visual & Interaction Upgrades:**
+  1. **Typographic Hierarchy:** Paired `Outfit` (display/headings), `DM Sans` (body), and `JetBrains Mono` (hashes, IDs, telemetry).
+  2. **7-Stage Workflow Progress Stepper:** Explicit horizontal pipeline visually tracking `DRAFT` → `PREVIEW` → `APPROVED` → `INVITED` → `ACCEPTED` → `CLAIMED DONE` → `CLOSED`.
+  3. **Zero-Asset Web Audio API Sound Synthesis:** Mechanical switch clicks and pop transitions on interactions, with an accessible navbar sound toggle (`🔊` / `🔇`).
+  4. **Session Gateway Persona Switcher:** Direct quick-switch persona chips for Priya (Requester), Sam (Assignee), and Alex (Member) for effortless reviewer evaluation.
+  5. **Simulated Assistant Workbench:** Suggested command chips (`[who can help?]`, `[draft: ...]`), animated execution shimmer, and syntax-highlighted MCP JSON-RPC trace inspector.
+  6. **Epistemic Truth Banners:** Explicit visual seals reinforcing that `CLAIMED_DONE` is a human report, not independent physical proof.
+- **Verification:** All 35 regression tests, 19 judge rehearsal checks, 9 official SDK checks, and 16 real Chrome CDP browser checks pass with 0 errors.
+
+
